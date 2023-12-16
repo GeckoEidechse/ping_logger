@@ -13,6 +13,7 @@ void function ping_log() {
 /// * `interval` - Interval in seconds in which to print ping
 void
 function ping_log_thread(int interval) {
+  printt( "Ping log thread started" )
   for (;;) {
     wait interval
 
