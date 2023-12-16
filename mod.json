@@ -13,7 +13,7 @@
    ],
    "Scripts": [
       {
-         "Path": "example.nut",
+         "Path": "ping_log.nut",
          "RunOn": "SERVER",
          "ServerCallback": {
             "After": "ping_log"
