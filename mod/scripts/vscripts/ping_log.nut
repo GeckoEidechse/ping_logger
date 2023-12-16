@@ -16,6 +16,9 @@ function ping_log_thread(int interval) {
   for (;;) {
     wait interval
 
+    if ( GetPlayerArray().len() == 0) {
+      continue;
+    }
     print ( "Player pings:" )
     foreach(entity player in GetPlayerArray()) {
       // TODO: Print player ping here
