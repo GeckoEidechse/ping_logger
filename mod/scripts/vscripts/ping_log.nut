@@ -23,6 +23,12 @@ function ping_log_thread(int interval) {
     print ( "Player pings:" )
     foreach(entity player in GetPlayerArray()) {
       // TODO: Print player ping here
+      printt(
+        player.GetPlayerName(),
+        player.GetUID(),
+        player.GetPlayerGameStat(PGS_PING), // <--- this produces garbage value on server (TODO)
+        "\n"
+      )
     }
   }
 }
