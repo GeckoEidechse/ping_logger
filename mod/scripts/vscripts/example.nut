@@ -1,6 +1,23 @@
 untyped
 global function ping_log
 
+/// Starts a thread that prints player ping in regular interval
 void function ping_log() {
-  print( "HEY YOU SHOULD CHANGE THIS" )
+  int playerLocationInterval = GetConVarInt("log_ping_interval")
+  if (playerLocationInterval > 0) {
+    thread ping_log_thread(playerLocationInterval)
+  }
+}
+
+/// Prints ping of all players in regular interval
+/// * `interval` - Interval in seconds in which to print ping
+void
+function ping_log_thread(int interval) {
+  for (;;) {
+    print ( "Player pings:" )
+    foreach(entity player in GetPlayerArray()) {
+      // TODO: Print player ping here
+    }
+    wait interval
+  }
 }
