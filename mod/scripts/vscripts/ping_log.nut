@@ -14,10 +14,11 @@ void function ping_log() {
 void
 function ping_log_thread(int interval) {
   for (;;) {
+    wait interval
+
     print ( "Player pings:" )
     foreach(entity player in GetPlayerArray()) {
       // TODO: Print player ping here
     }
-    wait interval
   }
 }
