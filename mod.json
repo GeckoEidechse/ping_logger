@@ -10,7 +10,7 @@
       {
          "Path": "example.nut",
          "RunOn": "SERVER",
-         "ClientCallback": {
+         "ServerCallback": {
             "Before": "example_callback"
          }
       }
