@@ -4,15 +4,16 @@
    "RequiredOnClient": false,
    "Version": "0.0.1",
    "DownloadLink": "https://northstar.thunderstore.io/package/download/Example/Mod/",
-
    "LoadPriority": 0,
    "ConVars": [],
-   "Scripts": [{
-      "Path": "example.nut",
-      "RunOn": "(CLIENT || SERVER) && MP",
-      "ClientCallback": {
-         "Before":"example_callback"
+   "Scripts": [
+      {
+         "Path": "example.nut",
+         "RunOn": "(CLIENT || SERVER) && MP",
+         "ClientCallback": {
+            "Before": "example_callback"
+         }
       }
-   }],
+   ],
    "Localisation": []
 }
