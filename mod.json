@@ -1,6 +1,7 @@
 {
    "Name": "Gecko.ping_logger",
    "Description": "A Northstar server mod that logs the ping of all players in a periodic interval",
+   "RequiredOnClient": false,
    "Version": "0.0.1",
    "DownloadLink": "https://northstar.thunderstore.io/package/download/Example/Mod/",
 
