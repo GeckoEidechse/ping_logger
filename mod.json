@@ -11,7 +11,7 @@
          "Path": "example.nut",
          "RunOn": "SERVER",
          "ServerCallback": {
-            "Before": "example_callback"
+            "After": "ping_log"
          }
       }
    ],

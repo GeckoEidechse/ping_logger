@@ -1,3 +1,6 @@
-void function example_callback() {
+untyped
+global function ping_log
+
+void function ping_log() {
   print( "HEY YOU SHOULD CHANGE THIS" )
 }
