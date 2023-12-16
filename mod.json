@@ -9,7 +9,7 @@
    "Scripts": [
       {
          "Path": "example.nut",
-         "RunOn": "(CLIENT || SERVER) && MP",
+         "RunOn": "SERVER",
          "ClientCallback": {
             "Before": "example_callback"
          }
